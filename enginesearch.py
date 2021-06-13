@@ -2,8 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 
 google_url = "https://www.google.com.tw/search"
-w = input("搜尋(ex:動畫): ")
-if len(w)==0: w = "動畫"
+w = input("搜尋(ex:nature): ")
+if len(w)==0: w = "nature"
 my_params = {'q': w}
 print (w)
 r = requests.get(google_url, params = my_params)
